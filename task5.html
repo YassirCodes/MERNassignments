@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+    <style>
+        h2{
+            color: blue;
+        }
+        table {
+            width: 80%; /* Reduce the width as needed */
+            margin: 0 auto; /* Center-align the table */
+            border-collapse: collapse; /* Keep the table borders */
+        }
+
+        td,th {
+            padding: 10px;
+            border: 1px solid #ddd; /* Add borders to table cells */
+            vertical-align: top; /* Align cell content to the top */
+        }
+
+        .large-column {
+            width: 70%; /* Adjust the width as needed */
+        }
+
+        .submit-row {
+            text-align: left;
+            font-weight: bold;
+        }
+        .eth{
+            text-align: right;
+        }
+
+        body {
+            text-align: center; /* Center-align the content within the body */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="number"]
+         {
+            border: none; /* Remove the border from input fields */
+            width: 100%; /* Make input fields full width */
+            padding: 5px; /* Add padding to input fields */
+        }
+
+        .lef {
+            text-align: left; /* Align the gender options to the left */
+            margin-left: 0; /* Remove the default margin for radio buttons */
+            padding-left: 5px; /* Remove the default padding for radio buttons */
+        }
+        textarea{
+            border: none;
+            width: 100%;
+        }
+        .cec input[type="checkbox"]{
+            margin-right:10px;;
+        }
+        #reg{
+            margin-top: 15px;
+            width:10%;
+            font-size: 16px; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th>Full Name:</th>
+                <td class="large-column"><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <th>Username:</th>
+                <td class="large-column"><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td class="large-column"><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th>Re-enter Password:</th>
+                <td class="large-column"><input type="password" name="repassword" required></td>
+            </tr>
+            <tr>
+                <th class="gender-label">Gender:</th>
+                <td class="large-column">
+                    <div class="lef">
+                        <input type="radio" name="gender" value="male" required> Male
+                        <br>
+                        <input type="radio" name="gender" value="female" required> Female
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td class="large-column"><input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                <th>Phone Number:</th>
+                <td class="large-column"><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td class="large-column"><textarea name="address" required></textarea></td>
+            </tr>
+            <tr>
+                <th>State:</th>
+                <td class="large-column"><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <th>Country:</th>
+                <td class="large-column lef"><select>
+                    <option value="" disabled selected>Select a Country</option>
+                    <option value="">India</option>
+                    <option value="">UAE</option>
+                    <option value="">USA</option>
+                    <option value="">France</option>
+                    <option value="">Japan</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Languages known</th>
+                <td class="large-column lef cec">
+                    <input type="checkbox">English
+                    <input type="checkbox">Kannada
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">Telugu
+                    </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" class="submit-row cec"><input type="checkbox">Hereby I declare all the given informations are true</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="eth">Login to <a href="https://learn.codemithra.com/login/index.php" target="_blank" rel="noopener noreferrer">ethnus </a>website</td>
+            </tr>
+
+        </table><input id="reg" type="submit" value="Register">
+    </form>
+</body>
+</html>

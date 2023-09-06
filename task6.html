@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>task 6</title>
+    <style>
+        .table-container {
+            width: fit-content;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            border: 2px solid black;
+        }
+
+        table {
+            width: fit-content;
+            /* Set the table width */
+
+            border-radius: 10px;
+            /* Set the table height */
+            border-spacing: 1px;
+            /* Add spacing between table cells */
+            background-color: rgb(137, 211, 211);
+            /* border: 2px solid black;
+            border-collapse: separate; */
+        }
+
+        td,
+        th {
+            width: 300px;
+            /* Adjusted cell width to account for spacing */
+            height: 10px;
+            /* Adjusted cell height to account for spacing */
+            text-align: center;
+            vertical-align: middle;
+            font-size: 15px;
+            /* Font size */
+            color: #000;
+            /* Text color */
+            border-radius: 50px;
+            /* Rounded corners for each cell */
+            background-color: rgb(137, 211, 211);
+            /* Background color for cells */
+            border: 2px solid black
+        }
+
+        td:nth-child(3) {
+            width: 50px;
+            /* Set the cell width for the 3rd column */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
